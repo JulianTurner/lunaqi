@@ -2,8 +2,12 @@ name: Create and Publish Docker Image
 
 on:
   push:
-    branches: ['main'] # Feuert, wenn du auf main pushst
-
+    branches: ['main', ] 
+  pull_request:
+    branches: ['main', ]
+  # Add manual trigger so you can run this workflow from Actions -> Run workflow
+  workflow_dispatch:
+    
 env:
   REGISTRY: ghcr.io
   # github.repository ist "User/Repo", IMAGE_NAME muss aber lowercase sein
