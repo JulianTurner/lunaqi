@@ -1,0 +1,18 @@
+.warning-panel {
+  border-left: 4px solid #ffb74d;
+}
+
+.mat-mdc-list-item-icon {
+  font-size: 8px !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin-right: 16px;
+  opacity: 0.5;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=recipe-detail.component.css.map */

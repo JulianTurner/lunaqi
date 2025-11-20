@@ -1,0 +1,30 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.content-wrapper {
+  padding: 20px;
+  margin-top: 64px;
+}
+
+.active-link {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  color: var(--mat-primary-color);
+}
+
+/*# sourceMappingURL=main-layout.component.css.map */

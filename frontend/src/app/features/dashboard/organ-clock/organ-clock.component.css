@@ -1,0 +1,68 @@
+@charset "UTF-8";
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* --- DETAIL CARD --- */
+.detail-card {
+  transition: all 0.3s ease;
+  /* Sanfte Animation, wenn sich der Inhalt ändert */
+}
+
+/* --- GRID ITEMS --- */
+.organ-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(31, 41, 55, 0.5);
+  border: 1px solid rgba(55, 65, 81, 0.5);
+  border-radius: 12px;
+  padding: 12px 4px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Hover State (Mouse Over) */
+}
+.organ-item:hover, .organ-item.is-hovered {
+  background-color: rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.5);
+  transform: translateY(-2px);
+}
+.organ-item:hover mat-icon, .organ-item.is-hovered mat-icon {
+  color: #2dd4bf;
+}
+.organ-item:hover span, .organ-item.is-hovered span {
+  color: white;
+}
+.organ-item {
+  /* Current Time State (Active) */
+}
+.organ-item.is-current {
+  background-color: rgba(19, 78, 74, 0.4);
+  border-color: #14b8a6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.organ-item.is-current mat-icon {
+  color: #2dd4bf;
+}
+.organ-item.is-current span:first-of-type {
+  color: #5eead4;
+}
+.organ-item.is-current span:last-of-type {
+  color: #99f6e4;
+}
+
+/* Scrollbar für Grid Container falls nötig auf sehr kleinen screens */
+.grid-container {
+  /* Optional: Custom Scrollbar Styling */
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+/*# sourceMappingURL=organ-clock.component.css.map */

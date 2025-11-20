@@ -1,0 +1,14 @@
+.git
+.vscode
+**/bin
+**/obj
+**/.DS_Store
+
+# Angular
+frontend/node_modules
+frontend/.angular
+frontend/dist
+
+# Misc
+**/*.user
+**/*.suo
